@@ -54,6 +54,9 @@ function draw() {
   text("Feedback Amount: "+ feedbackSlider.value(),200,100);
   text("Distortion Amount: "+ distSlider.value(),10,135);
   text("Reverb Wet Amount: "+ wetSlider.value(),200,135);
+  text("2.Press the buttons to play the samples",10,220);
+  text("3.Use the sliders to control the delay, feedback, distortion and reverb",10,240);
+  text("1.Use the start audio context button to start the audio",10,200);
 }
 
 
