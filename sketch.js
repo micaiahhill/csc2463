@@ -53,7 +53,7 @@ function draw() {
   text("Delay Time: "+ delTimeSlider.value(),10,105);
   text("Feedback Amount: "+ feedbackSlider.value(),200,100);
   text("Distortion Amount: "+ distSlider.value(),10,135);
-  text(" Reverb Wet Amount: "+ wetSlider.value(),200,135);
+  text("Reverb Wet Amount: "+ wetSlider.value(),200,135);
 }
 
 
