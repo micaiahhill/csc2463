@@ -3,72 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC2463 Assignments</title>
-    <link rel="stylesheet" href="assets/css/style.css"> </head>
+    <title>Micaiah Hill-Shuva - Interactive Media Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background-color: #f9f9f9;
+        }
+
+        .project-item h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .project-item h3 a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project-item h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-item p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .project-item p.view-doc a {
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-item p.view-doc a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
+</head>
 <body>
     <header>
-        <h1>CSC2463 Interactive Media Assignments</h1>
-        <p>A collection of creative projects exploring sound and interaction using p5.js and Tone.js.</p>
+        <h1>Micaiah Hill-Shuva</h1>
+        <p>Interactive Media & Creative Technology Portfolio</p>
     </header>
 
     <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A dedicated and creative fourth-year student in CSC2463 (Interactive Media) with a passion for exploring the intersection of code, sound, and visual design. This portfolio showcases a collection of projects developed using p5.js and Tone.js, demonstrating skills in interactive programming, audio synthesis, and creative problem-solving.</p>
+            <p>Throughout these assignments, I've explored various concepts in interactive media, from basic graphics and sound manipulation to more complex interactive installations. The final project, <a href="Final-Project/">Synth Runner: An Immersive Audio-Visual Experience</a>, highlights my ability to integrate physical interfaces (Arduino) with web-based technologies to create engaging user experiences.</p>
+        </section>
+
         <section id="project-list">
             <h2>Projects</h2>
 
-            <div class="project-item">
-                <h3><a href="p5-project/">Project 1: [Descriptive Title of Project 1]</a></h3>
-                <p>A brief description of the first assignment and its key features.</p>
-                <p><a href="p5-project/">View Documentation</a></p>
+            <div class="Drawing with P5.js">
+                <h3><a href="p5-project/">Project 1: Drawing with P5.js</a></h3>
+                <p>This assignment focused on developing a strong foundation in P5.js by meticulously recreating a series of target images using code. The objective was to translate visual complexity into programmatic instructions, leveraging P5.js's core shape drawing capabilities.</p>
+                <p class="view-doc"><a href="p5-project/">View Documentation</a></p>
             </div>
 
             <div class="project-item">
-                <h3><a href="csc2463/">Project 2: [Descriptive Title of Project 2]</a></h3>
-                <p>A short overview of the second project and its main concepts.</p>
-                <p><a href="csc2463/">View Documentation</a></p>
+                <h3><a href="csc2463/">Project 2: Paint App</a></h3>
+                <p>This assignment involved creating a dynamic web interface using P5.js, featuring a blank canvas and an interactive color palette. The objective was to implement a fundamental user interaction: selecting a color from the palette to paint on the canvas</p>
+                <p class="view-doc"><a href="csc2463/">View Documentation</a></p>
             </div>
 
             <div class="project-item">
-                <h3><a href="Graphics-04/">Project 3: [Descriptive Title of Project 3]</a></h3>
-                <p>A concise summary of the third assignment and what it demonstrates.</p>
-                <p><a href="Graphics-04/">View Documentation</a></p>
-            </div>
-            <div class="project-item">
-                <h3><a href="Graphics-05/">Project 4: [Descriptive Title of Project 3]</a></h3>
-                <p>A concise summary of the third assignment and what it demonstrates.</p>
-                <p><a href="Graphics-05/">View Documentation</a></p>
-            </div>
-            <div class="project-item">
-                <h3><a href="Sounds-01/">Project 5: [Descriptive Title of Project 3]</a></h3>
-                <p>A concise summary of the third assignment and what it demonstrates.</p>
-                <p><a href="Sounds-01/">View Documentation</a></p>
-            </div>
-            <div class="project-item">
-                <h3><a href="sound-02/">Project 6: [Descriptive Title of Project 3]</a></h3>
-                <p>A concise summary of the third assignment and what it demonstrates.</p>
-                <p><a href="sound-02/">View Documentation</a></p>
-            </div>
-            <div class="project-item">
-                <h3><a href="Sounds-03/">Project 7: [Descriptive Title of Project 3]</a></h3>
-                <p>A concise summary of the third assignment and what it demonstrates.</p>
-                <p><a href="Sounds-03/">View Documentation</a></p>
-            </div>
-            <div class="project-item">
-                <h3><a href="Sound-Proj/">Project 8: [Descriptive Title of Project 3]</a></h3>
-                <p>A concise summary of the third assignment and what it demonstrates.</p>
-                <p><a href="Sound-Proj/">View Documentation</a></p>
-            </div>
-            <div class="project-item">
-                <h3><a href="Final-Project/">Final Project: [Descriptive Title of Project 3]</a></h3>
-                <p>A concise summary of the third assignment and what it demonstrates.</p>
-                <p><a href="Final-Project/">View Documentation</a></p>
+                <h3><a href="Graphics-04/">Project 3: Sprite Animation</a></h3>
+                <p>This assignment focused on implementing character animation in P5.js using provided sprite sheets. The goal was to create an interactive object capable of displaying standing, walking-right, and walking-left animations, ensuring smooth transitions and visually grounded movement.</p>
+                <p class="view-doc"><a href="Graphics-04/">View Documentation</a></p>
             </div>
 
+            <div class="project-item">
+                <h3><a href="Graphics-05/">Project 4:Bug Squish</a></h3>
+                <p>This assignment involved developing a simple yet engaging video game in P5.js where the user interacts by clicking to "squish" animated bugs within a time limit. The project focused on implementing core game mechanics, user interaction,animation, and real-time feedback.</p>
+                <p class="view-doc"><a href="Graphics-05/">View Documentation</a></p>
+            </div>
 
-            </section>
+            <div class="project-item">
+                <h3><a href="Sounds-01/">Project 5: Building a Sampler</a></h3>
+                <p>This assignment involved designing and implementing a basic digital audio sampler using the P5.js and Tone.js libraries. The goal was to create an interactive interface allowing users to trigger multiple audio samples and manipulate a real-time audio effect.</p>
+                <p class="view-doc"><a href="Sounds-01/">View Documentation</a></p>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="sound-02/">Project 6:Building a Synthesizer</a></h3>
+                <p>This project involved designing and implementing a fully functional web-based synthesizer using the Tone.js library. The goal was to create an interactive instrument that allows users to play notes across at least one octave (or eight distinct sounds) using keyboard input, coupled with a real-time audio processing effect to shape the sonic output.</p>
+                <p class="view-doc"><a href="sound-02/">View Documentation</a></p>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="Sounds-03/">Project 7:Sound Synthesis & Sound Effects</a></h3>
+                <p>This project involved creating an interactive experience where a user's click triggers both a visual representation of an event and a corresponding, dynamically generated sound effect. The goal was to synthesize a compelling soundscape that sonically represents a chosen action or event, using a combination of Tone.js's synthesis and processing capabilities.<p>
+                <p class="view-doc"><a href="Sounds-03/">View Documentation</a></p>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="Sound-Proj/">Project 8: Bug Squisher + Tone.js </a></h3>
+                <p>Building upon the core "Bug Squisher" game, this project focused on enriching the player experience through a comprehensive and adaptive audio design. The goal was to create a fun musical theme, integrate sound effects for key in-game events, and dynamically alter the sonic landscape to reflect the changing gameplay and game states.</p>
+                <p class="view-doc"><a href="Sound-Proj/">View Documentation</a></p>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="Final-Project/">Final Project: Synth Runner - An Immersive Audio-Visual Experience</a></h3>
+                <p>An immersive web-based game combining p5.js for visuals and Tone.js for dynamic audio, controlled by an Arduino-connected joystick. Players navigate a musical landscape, collect notes, and avoid obstacles. This project demonstrates integration of hardware and software for a unique interactive experience. <a href="Final-Project/">View Documentation</a> for details on the game mechanics, technical implementation, and future development plans.</p>
+                <p class="view-doc"><a href="Final-Project/">View Documentation</a></p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; Micaiah Hill-Shuva - CSC2463 - 4th Year</p>
+        <p>&copy; 2025 Micaiah Hill-Shuva - Interactive Media Portfolio</p>
     </footer>
 </body>
 </html>
