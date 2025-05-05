@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synth Runner: An Immersive Audio-Visual Experience</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #00ff00; /* Green text for that retro terminal look */
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px dashed #00ff00;
+        }
+
+        h1, h2, h3 {
+            color: #00ffff; /* Cyan for headings */
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px dotted #00ff00;
+            background-color: #111;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Increased gap for better spacing */
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .gallery div {
+            text-align: center; /* Center the image and label */
+        }
+
+        .gallery img {
+            max-width: 300px; /* Increased max-width for larger images */
+            height: auto;
+            border: 1px solid #00ff00;
+            box-shadow: 2px 2px 3px #000;
+            margin-bottom: 5px; /* Add a little space below the image */
+        }
+
+        .video-container {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .video-container h3 {
+            margin-bottom: 5px;
+        }
+
+        .video-container video {
+            max-width: 80%;
+            border: 1px solid #00ff00;
+            box-shadow: 2px 2px 3px #000;
+        }
+
+        .schematic-diagram {
+            margin-top: 15px;
+            max-width: 70%; /* Slightly larger for better visibility */
+            height: auto;
+            border: 1px solid #00ff00;
+            box-shadow: 2px 2px 3px #000;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .code-diagram {
+            margin-top: 15px;
+            max-width: 100%;
+            overflow-x: auto;
+            background-color: #333; /* Darker background for code */
+            padding: 10px;
+            border: 1px solid #00ff00;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+        }
+
+        .future-development ul {
+            list-style-type: square; /* Retro list style */
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: #00ff00;
+            border-top: 2px dashed #00ff00;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Specific retro text effects */
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 0.1em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 1px dotted #00ff00;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #ffff00; /* Yellow links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SYNTH RUNNER</h1>
+        <p style="color:#00ffff;">An Immersive Audio-Visual Experience</p>
+    </header>
+
+    <main>
+        <section id="project-overview">
+            <h2>PROJECT OUTLINE</h2>
+            <p>SYNTH RUNNER is a web-based game built using p5.js and Tone.js, enhanced by physical interaction through an Arduino-connected joystick. Players navigate a dynamic environment, collecting musical notes and avoiding obstacles in a race against time. The game features responsive visuals, synthesized audio feedback, and physical controls for an engaging and immersive experience. The background music was created using MIDI.city, a web-based MIDI sequencer.</p>
+        </section>
+
+        <section id="narrative-description">
+            <h2>NARRATIVE DESCRIPTION</h2>
+            <p>IMAGINE diving into a vibrant, neon-lit world where music and motion collide. In SYNTH RUNNER, you take control of a nimble avatar, guided by a physical joystick, as it navigates a stream of falling musical notes and treacherous obstacles. The goal is simple: collect as many notes as possible to build your score while skillfully dodging anything that threatens your survival.</p>
+            <p>EACH collected note triggers a melodic sound, adding to a dynamic soundscape that evolves with your gameplay. HOWEVER, beware! Colliding with obstacles will cost you precious lives. To aid your journey, you have access to special abilities: a time-freezing power to momentarily slow down the chaos and a magnetic attraction to pull in nearby notes.</p>
+            <p>AS the game progresses, the tempo and difficulty increase, challenging your reflexes and strategic thinking. The integrated soundtrack, created using MIDI.city, keeps the energy high, reacting to the ebb and flow of the gameplay. SYNTH RUNNER isn't just a game; it's an interactive performance where your movements shape both the visual and auditory experience.</p>
+        </section>
+
+        <section id="visual-elements">
+            <h2>VISUAL ELEMENTS</h2>
+            <div class="gallery">
+                <div>
+                    <p>LANDING PAGE</p>
+                    <img src="media/landingpage.png" alt="Welcome Screen">
+                </div>
+                <div>
+                    <p>GAMEPLAY SCREENSHOT</p>
+                    <img src="media/gameplay.png" alt="Gameplay Screenshot">
+                </div>
+                <div>
+                    <p>TIME FREEZE EFFECT</p>
+                    <img src="media/timefrezze.png" alt="Time Freeze Effect">
+                </div>
+                <div>
+                    <p>MAGNET ACTIVE EFFECT</p>
+                    <img src="media/magnetactive.png" alt="Magnet Active Effect">
+                </div>
+                <div>
+                    <p>GAME OVER SCREEN</p>
+                    <img src="media/gameover.png" alt="Game Over Screen">
+                </div>
+            </div>
+        </section>
+
+        <section id="video-example">
+            <h2>VIDEO EXAMPLE</h2>
+            <div class="video-container">
+                <h3>GAMEPLAY VIDEO</h3>
+                <video src="media/gameplay.mp4" controls width="640" height="480"></video>
+            </div>
+
+            <div class="video-container">
+                <h3>MIDI.CITY SOUND CREATION</h3>
+                <video src="media/samp.mp4" controls width="640" height="480"></video>
+            </div>
+        </section>
+
+        <section id="schematics-diagrams">
+            <h2>SCHEMATICS AND DIAGRAMS</h2>
+            <h3>ARDUINO CONNECTION DIAGRAM</h3>
+            <img src="media/ledlights.png" alt="Arduino Connection Diagram - LEDs" class="schematic-diagram">
+            <p style="text-align:center;">ARDUINO CONNECTION DIAGRAM (LEDs)</p>
+            <img src="media/joystick.png" alt="Arduino Connection Diagram - Joystick" class="schematic-diagram">
+            <p style="text-align:center;">ARDUINO CONNECTION DIAGRAM (Joystick)</p>
+            <p>ARDUINO CONNECTION DIAGRAM: These diagrams illustrate the connections between the joystick, LEDs, and the Arduino board, showcasing how the physical input and outputs are integrated into the game.</p>
+
+            <h3>SOFTWARE ARCHITECTURE DIAGRAM</h3>
+            <img src="media/diagram.png" alt="Software Architecture Diagram" class="schematic-diagram">
+
+            <h3>CODE SNIPPET</h3>
+            <div class="code-diagram">
+                <pre>
+graph LR
+    A[Joystick (Physical Input)] --> B(Arduino);
+    B --> C{Serial Communication};
+    C --> D[p5.js (Web Browser)];
+    D --> E{Game Logic};
+    E --> F[Canvas Rendering];
+    E --> G[Tone.js (Audio Synthesis)];
+    D --> H[MIDI.city (Background Music Creation)];
+                </pre>
+            </div>
+        </section>
+
+        <section id="future-development" class="future-development">
+            <h2>THOUGHTS ABOUT FUTURE DEVELOPMENT</h2>
+            <ul>
+                <li>LEVEL DESIGN AND PROGRESSION: Implement distinct levels with unique challenges, layouts, and increasing difficulty.</li>
+                <li>POWER-UPS: Introduce more power-ups beyond time freeze and the magnet, such as temporary invincibility or score multipliers.</li>
+                <li>ENEMY VARIETY: Add different types of obstacles with varying movement patterns and behaviors.</li>
+                <li>SOUND DESIGN ENHANCEMENTS: Explore more complex sound synthesis and effects, perhaps tying specific notes to different sound timbres.</li>
+                <li>VISUAL IMPROVEMENTS: Enhance the visual style with more detailed animations, particle effects, and background elements.</li>
+                <li>USER INTERFACE (UI) OVERHAUL: Refine the UI for a more polished and intuitive user experience.</li>
+                <li>SAVING AND LOADING: Allow players to save their high scores and progress.</li>
+                <li>MULTIPLAYER MODE: Explore the possibility of a local or online multiplayer mode where players compete for the highest score.</li>
+                <li>MOBILE RESPONSIVENESS: Adapt the game to be playable on mobile devices.</li>
+                <li>INTEGRATION WITH MIDI DEVICES: Allow players to use MIDI controllers as input devices.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Micaiah Hill-Shuva - CSC2463 - Senior Year</p>
+    </footer>
+</body>
+</html>
